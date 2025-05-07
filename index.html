@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md text-center space-y-6">
+      <div class="text-2xl font-bold">Countdown Timer</div>
+
+      <div class="flex justify-center gap-2 text-xl font-mono" id="display">
+        <input type="text" id="minMSB" value="0" maxlength="1" class="w-10 text-center border rounded" />
+        <input type="text" id="minLSB" value="1" maxlength="1" class="w-10 text-center border rounded" />
+        <span class="mx-1">:</span>
+        <input type="text" id="secMSB" value="0" maxlength="1" class="w-10 text-center border rounded" />
+        <input type="text" id="secLSB" value="5" maxlength="1" class="w-10 text-center border rounded" />
+      </div>
+
+      <div class="space-x-4">
+        <button id="start" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Start</button>
+        <button id="stop" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded" disabled>Stop</button>
+        <button id="reset" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">Reset</button>
+      </div>
+
+      <p class="text-sm text-gray-600">Enter time in <strong>MM:SS</strong> format</p>
+    </div>
+  </body>
+</html>
